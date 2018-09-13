@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
+    StyleSheet
 } from 'react-native';
 
 export default class CategoryScreen extends Component {
@@ -16,3 +17,10 @@ export default class CategoryScreen extends Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex:1,
+        justifyContent: 'flex-start'
+    }
+});
