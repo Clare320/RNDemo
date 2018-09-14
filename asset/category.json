@@ -1,0 +1,565 @@
+{
+    "Data": [
+        {
+            "Id": "9fb7fe35-bf8f-40c4-8ca7-3d950a3a1b75",
+            "Img": "",
+            "SeoCode": "ziying",
+            "MobileClassName": "自营",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "51228b19-c6cd-42fa-8b8d-c409291c1e99",
+                    "Img": "",
+                    "SeoCode": "zyysx",
+                    "MobileClassName": "自营有属性",
+                    "ParentID": "9fb7fe35-bf8f-40c4-8ca7-3d950a3a1b75",
+                    "Child": [
+                        {
+                            "Id": "19630220-4769-4fb3-a434-6e9d24444bfb",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/19630220-4769-4fb3-a434-6e9d24444bfb.png",
+                            "SeoCode": "ysx",
+                            "MobileClassName": "有属性",
+                            "ParentID": "51228b19-c6cd-42fa-8b8d-c409291c1e99"
+                        }
+                    ]
+                },
+                {
+                    "Id": "11bca0bd-0579-4196-9063-5a5a73dd6233",
+                    "Img": "",
+                    "SeoCode": "zywsx",
+                    "MobileClassName": "自营无属性",
+                    "ParentID": "9fb7fe35-bf8f-40c4-8ca7-3d950a3a1b75"
+                }
+            ]
+        },
+        {
+            "Id": "3713e784-4690-4967-90bb-24f9c985580e",
+            "Img": "",
+            "SeoCode": "quanqiugouziying",
+            "MobileClassName": "全球购+自营",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "9f6139a2-7bda-45e1-8836-49237cc74109",
+                    "Img": "",
+                    "SeoCode": "quanqiugouliuliuliu",
+                    "MobileClassName": "全球购转运",
+                    "ParentID": "3713e784-4690-4967-90bb-24f9c985580e",
+                    "Child": [
+                        {
+                            "Id": "0e0c2550-bcf7-4544-a954-beae47c4c11d",
+                            "Img": "",
+                            "SeoCode": "UUyoushuxing",
+                            "MobileClassName": "UU有属性",
+                            "ParentID": "9f6139a2-7bda-45e1-8836-49237cc74109"
+                        },
+                        {
+                            "Id": "b3acf6d8-1119-4606-b267-3174b4a66c6a",
+                            "Img": "",
+                            "SeoCode": "UUwushuxing",
+                            "MobileClassName": "UU无属性",
+                            "ParentID": "9f6139a2-7bda-45e1-8836-49237cc74109"
+                        }
+                    ]
+                },
+                {
+                    "Id": "e31af141-7ed2-4308-9a2e-b621b5308b4e",
+                    "Img": "",
+                    "SeoCode": "ziyingliuliuliu",
+                    "MobileClassName": "自营",
+                    "ParentID": "3713e784-4690-4967-90bb-24f9c985580e",
+                    "Child": [
+                        {
+                            "Id": "34e69919-20fb-49a1-a3d8-8ef80b799162",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/34e69919-20fb-49a1-a3d8-8ef80b799162.jpg",
+                            "SeoCode": "ziyingyoushuxingliu",
+                            "MobileClassName": "自营有属性",
+                            "ParentID": "e31af141-7ed2-4308-9a2e-b621b5308b4e"
+                        },
+                        {
+                            "Id": "c92d65bd-4c3f-46a5-a9ac-34a1d5a8be94",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/c92d65bd-4c3f-46a5-a9ac-34a1d5a8be94.jpg",
+                            "SeoCode": "ziyingwushuxingliu",
+                            "MobileClassName": "自营无属性",
+                            "ParentID": "e31af141-7ed2-4308-9a2e-b621b5308b4e"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": "67ee177b-5d58-43cf-ab1b-8227a6913cd4",
+            "Img": "",
+            "SeoCode": "supre",
+            "MobileClassName": "supre",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "a6502771-7814-462f-a41e-8853c02b4bdf",
+                    "Img": "",
+                    "SeoCode": "supreU",
+                    "MobileClassName": "supreU",
+                    "ParentID": "67ee177b-5d58-43cf-ab1b-8227a6913cd4",
+                    "Child": [
+                        {
+                            "Id": "202e725b-07b0-42e4-9a72-ed33953c016a",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/202e725b-07b0-42e4-9a72-ed33953c016a.jpg",
+                            "SeoCode": "supreU",
+                            "MobileClassName": "supreU",
+                            "ParentID": "a6502771-7814-462f-a41e-8853c02b4bdf"
+                        }
+                    ]
+                },
+                {
+                    "Id": "3e057fbf-0737-43b1-8c6b-f6dfadfa5ce3",
+                    "Img": "",
+                    "SeoCode": "supreME",
+                    "MobileClassName": "supreME",
+                    "ParentID": "67ee177b-5d58-43cf-ab1b-8227a6913cd4",
+                    "Child": [
+                        {
+                            "Id": "25a0db1c-9c1d-438c-8ca6-9a6ac25e1de7",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/25a0db1c-9c1d-438c-8ca6-9a6ac25e1de7.jpg",
+                            "SeoCode": "supreMe",
+                            "MobileClassName": "supreMe",
+                            "ParentID": "3e057fbf-0737-43b1-8c6b-f6dfadfa5ce3"
+                        }
+                    ]
+                },
+                {
+                    "Id": "caacece7-a978-4cd1-93aa-4a205b4ca48f",
+                    "Img": "",
+                    "SeoCode": "testpi",
+                    "MobileClassName": "Test",
+                    "ParentID": "67ee177b-5d58-43cf-ab1b-8227a6913cd4",
+                    "Child": [
+                        {
+                            "Id": "6c5c9543-2dfa-4cf8-b31e-f0f70cff65f0",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/6c5c9543-2dfa-4cf8-b31e-f0f70cff65f0.jpg",
+                            "SeoCode": "huliye",
+                            "MobileClassName": "护理液",
+                            "ParentID": "caacece7-a978-4cd1-93aa-4a205b4ca48f"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": "76169693-c8b4-4f7f-956c-28353548b109",
+            "Img": "",
+            "SeoCode": "quanqiugou",
+            "MobileClassName": "全球购",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "e277044e-7810-4bda-8999-b533ec3d9d8b",
+                    "Img": "",
+                    "SeoCode": "yinxingyanjing",
+                    "MobileClassName": "隐形眼镜",
+                    "ParentID": "76169693-c8b4-4f7f-956c-28353548b109",
+                    "Child": [
+                        {
+                            "Id": "9424bf31-e425-40fc-829d-3205ddae648a",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/9424bf31-e425-40fc-829d-3205ddae648a.jpg",
+                            "SeoCode": "yinxingyanjing",
+                            "MobileClassName": "LIU全属性",
+                            "ParentID": "e277044e-7810-4bda-8999-b533ec3d9d8b"
+                        },
+                        {
+                            "Id": "c133ce6e-45e2-41e2-8917-af0cd824eb29",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/c133ce6e-45e2-41e2-8917-af0cd824eb29.jpg",
+                            "SeoCode": "huliyeliuliuliu",
+                            "MobileClassName": "LIU无属性",
+                            "ParentID": "e277044e-7810-4bda-8999-b533ec3d9d8b"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": "41c5449f-e790-4569-932e-144bb35e6d5f",
+            "Img": "",
+            "SeoCode": "huliye",
+            "MobileClassName": "护理液",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "0dcc5a8d-2f27-41db-a733-074874f2aa18",
+                    "Img": "",
+                    "SeoCode": "suprehuliye",
+                    "MobileClassName": "supre护理液",
+                    "ParentID": "41c5449f-e790-4569-932e-144bb35e6d5f"
+                },
+                {
+                    "Id": "c1d64788-0c81-4583-ad25-9b81173e8c5b",
+                    "Img": "",
+                    "SeoCode": "kelihuli",
+                    "MobileClassName": "可丽维护理",
+                    "ParentID": "41c5449f-e790-4569-932e-144bb35e6d5f",
+                    "Child": [
+                        {
+                            "Id": "39651bee-4f36-4248-baed-9d7ab3a22c32",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/39651bee-4f36-4248-baed-9d7ab3a22c32.jpg",
+                            "SeoCode": "runyan",
+                            "MobileClassName": "润眼液",
+                            "ParentID": "c1d64788-0c81-4583-ad25-9b81173e8c5b"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": "95d4c3f2-bb81-4fc2-a2d2-476640bf3a50",
+            "Img": "",
+            "SeoCode": "huazhuangpin",
+            "MobileClassName": "化妆品",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "91c0c750-c437-4926-b741-5bdfac020178",
+                    "Img": "",
+                    "SeoCode": "bushuimianmo",
+                    "MobileClassName": "补水面膜",
+                    "ParentID": "95d4c3f2-bb81-4fc2-a2d2-476640bf3a50",
+                    "Child": [
+                        {
+                            "Id": "99b0b85d-31fd-42a1-89a1-babd85ecdfdf",
+                            "Img": "",
+                            "SeoCode": "lanzhibushuimianmo",
+                            "MobileClassName": "兰芝",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "0122628a-9b85-4af0-9d81-cf9d2eaa60b5",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "11",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "0aa70171-c67e-4177-86d0-a98caf455b30",
+                            "Img": "",
+                            "SeoCode": "lanzhizhii",
+                            "MobileClassName": "22",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "d6657cba-78e3-485f-aea2-767e8e13508e",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhi",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "7a8f7a5e-a8aa-400d-875f-15ace2a137db",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhi3",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "00abbcac-bb05-492e-8c00-347e5766438a",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhi6",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "244fce79-af71-43b4-afb1-a6691cbcda60",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhi8",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "8ad72028-428f-4942-aba8-fb1c79e08bbe",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhi9",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "d7677625-deb6-4afb-9cdd-4ff3e1f6bd72",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhiq",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "a4638695-a14e-4cf8-9582-6c97736714b3",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhiw",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "7e41498e-62e0-45d1-bd71-77dcabca77c6",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhie",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "c56534a9-6032-4e48-91ba-b75d686b4ad4",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhir",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "4fb964dc-e905-4276-86e6-3ab78100d2c3",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhit",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "6d5f7fd8-7fab-42e5-b3dd-7798eb7e9fb7",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhiy",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        },
+                        {
+                            "Id": "317d3207-d497-47ec-adf9-24db2b567725",
+                            "Img": "",
+                            "SeoCode": "lanzhizhi",
+                            "MobileClassName": "lanzhizhiyd",
+                            "ParentID": "91c0c750-c437-4926-b741-5bdfac020178"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": "32fae3e6-0a0f-4eb9-b79c-0118d69be4ae",
+            "Img": "",
+            "SeoCode": "shuxing",
+            "MobileClassName": "1026",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "14e77f06-9ca1-4c78-bc73-a0398c559213",
+                    "Img": "",
+                    "SeoCode": "erji",
+                    "MobileClassName": "02",
+                    "ParentID": "32fae3e6-0a0f-4eb9-b79c-0118d69be4ae",
+                    "Child": [
+                        {
+                            "Id": "e889b519-233a-4138-9770-30d2c71e4dd5",
+                            "Img": "",
+                            "SeoCode": "sanji",
+                            "MobileClassName": "sanji",
+                            "ParentID": "14e77f06-9ca1-4c78-bc73-a0398c559213"
+                        },
+                        {
+                            "Id": "f377ef20-08aa-4b74-bd5f-e508a01a4e83",
+                            "Img": "",
+                            "SeoCode": "shu",
+                            "MobileClassName": "03",
+                            "ParentID": "14e77f06-9ca1-4c78-bc73-a0398c559213"
+                        }
+                    ]
+                },
+                {
+                    "Id": "630e0e52-2898-456c-a781-11efd780112b",
+                    "Img": "",
+                    "SeoCode": "uu",
+                    "MobileClassName": "04",
+                    "ParentID": "32fae3e6-0a0f-4eb9-b79c-0118d69be4ae"
+                }
+            ]
+        },
+        {
+            "Id": "7e8b3a98-e2b7-4e48-ad8f-1d626da02a82",
+            "Img": "",
+            "SeoCode": "yinxing",
+            "MobileClassName": "隐形眼镜",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "c8ce3666-3388-43bf-b32e-a974b6521c44",
+                    "Img": "",
+                    "SeoCode": "meitong",
+                    "MobileClassName": "美瞳",
+                    "ParentID": "7e8b3a98-e2b7-4e48-ad8f-1d626da02a82",
+                    "Child": [
+                        {
+                            "Id": "32bfc68e-0de8-4198-82bc-d15cc5b91f16",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/32bfc68e-0de8-4198-82bc-d15cc5b91f16.jpg",
+                            "SeoCode": "ziran",
+                            "MobileClassName": "自然清新",
+                            "ParentID": "c8ce3666-3388-43bf-b32e-a974b6521c44"
+                        }
+                    ]
+                },
+                {
+                    "Id": "8da75cda-519e-4258-926d-16dffb31b943",
+                    "Img": "",
+                    "SeoCode": "boshilunripao",
+                    "MobileClassName": "博士伦日抛",
+                    "ParentID": "7e8b3a98-e2b7-4e48-ad8f-1d626da02a82",
+                    "Child": [
+                        {
+                            "Id": "9b53bc8a-b24f-4758-8652-8825472c7ab8",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/9b53bc8a-b24f-4758-8652-8825472c7ab8.jpg",
+                            "SeoCode": "huodong",
+                            "MobileClassName": "1026",
+                            "ParentID": "8da75cda-519e-4258-926d-16dffb31b943"
+                        },
+                        {
+                            "Id": "7055552b-72ef-4407-8dc8-d03d7250181c",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/7055552b-72ef-4407-8dc8-d03d7250181c.png",
+                            "SeoCode": "ripao",
+                            "MobileClassName": "日抛",
+                            "ParentID": "8da75cda-519e-4258-926d-16dffb31b943"
+                        },
+                        {
+                            "Id": "f01a3102-f30f-48cf-a5d6-6e8abe8b177c",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/f01a3102-f30f-48cf-a5d6-6e8abe8b177c.jpg",
+                            "SeoCode": "huodong",
+                            "MobileClassName": "海昌",
+                            "ParentID": "8da75cda-519e-4258-926d-16dffb31b943"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": "6e58eef8-97c1-4cfe-a4af-9d7fe5baa8d1",
+            "Img": "",
+            "SeoCode": "jhjkjk",
+            "MobileClassName": "杂货商品",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "91014afb-1ace-4ce4-b4eb-2e730207651c",
+                    "Img": "",
+                    "SeoCode": "dsjfjk",
+                    "MobileClassName": "2级测试",
+                    "ParentID": "6e58eef8-97c1-4cfe-a4af-9d7fe5baa8d1",
+                    "Child": [
+                        {
+                            "Id": "39ecf3e8-b12d-4a4c-8c39-78166fddb794",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/39ecf3e8-b12d-4a4c-8c39-78166fddb794.jpg",
+                            "SeoCode": "ujjk",
+                            "MobileClassName": "3级分类测试",
+                            "ParentID": "91014afb-1ace-4ce4-b4eb-2e730207651c"
+                        }
+                    ]
+                },
+                {
+                    "Id": "23d36316-2d39-4b9d-a20c-53175e500498",
+                    "Img": "",
+                    "SeoCode": "sss",
+                    "MobileClassName": "打包商品",
+                    "ParentID": "6e58eef8-97c1-4cfe-a4af-9d7fe5baa8d1",
+                    "Child": [
+                        {
+                            "Id": "d1f87dd3-2a98-46dc-a882-120efc1b9221",
+                            "Img": "",
+                            "SeoCode": "jkhhk",
+                            "MobileClassName": "打包商品",
+                            "ParentID": "23d36316-2d39-4b9d-a20c-53175e500498"
+                        }
+                    ]
+                },
+                {
+                    "Id": "e40fb948-ab3c-4ee5-9012-5c568153b1cc",
+                    "Img": "",
+                    "SeoCode": "ghjh",
+                    "MobileClassName": "常用商品分类",
+                    "ParentID": "6e58eef8-97c1-4cfe-a4af-9d7fe5baa8d1",
+                    "Child": [
+                        {
+                            "Id": "3b91d50f-b7d9-4f55-9658-3a4a5f94ceb8",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/3b91d50f-b7d9-4f55-9658-3a4a5f94ceb8.png",
+                            "SeoCode": "jhjhu",
+                            "MobileClassName": "还是常用商品分类三级",
+                            "ParentID": "e40fb948-ab3c-4ee5-9012-5c568153b1cc"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": "cdae1881-a1da-4d34-bdee-5a2ed3457174",
+            "Img": "",
+            "SeoCode": "testone",
+            "MobileClassName": "test1",
+            "ParentID": "00000000-0000-0000-0000-000000000000",
+            "Child": [
+                {
+                    "Id": "c6849ace-28a2-4319-8a0c-6120914f108b",
+                    "Img": "",
+                    "SeoCode": "jingnei",
+                    "MobileClassName": "境内",
+                    "ParentID": "cdae1881-a1da-4d34-bdee-5a2ed3457174",
+                    "Child": [
+                        {
+                            "Id": "26406a54-8442-4af6-9eb1-e250623a26e9",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/26406a54-8442-4af6-9eb1-e250623a26e9.jpg",
+                            "SeoCode": "wushuxing",
+                            "MobileClassName": "无属性",
+                            "ParentID": "c6849ace-28a2-4319-8a0c-6120914f108b"
+                        },
+                        {
+                            "Id": "3c4c7555-d30c-4846-9547-21f27a3fd811",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/3c4c7555-d30c-4846-9547-21f27a3fd811.jpg",
+                            "SeoCode": "youshuxing",
+                            "MobileClassName": "有属性",
+                            "ParentID": "c6849ace-28a2-4319-8a0c-6120914f108b"
+                        }
+                    ]
+                },
+                {
+                    "Id": "fc40bddb-a95c-4928-aab5-1a1c168d2754",
+                    "Img": "",
+                    "SeoCode": "jingwai",
+                    "MobileClassName": "境外",
+                    "ParentID": "cdae1881-a1da-4d34-bdee-5a2ed3457174",
+                    "Child": [
+                        {
+                            "Id": "7d90b5cc-860e-4eb6-8474-c2fdaa14eb60",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/7d90b5cc-860e-4eb6-8474-c2fdaa14eb60.jpg",
+                            "SeoCode": "haiwaiwushuxing",
+                            "MobileClassName": "海外无属性",
+                            "ParentID": "fc40bddb-a95c-4928-aab5-1a1c168d2754"
+                        },
+                        {
+                            "Id": "0abac7e3-aff3-440a-b35e-ae483913ca29",
+                            "Img": "http://192.168.117.146:8011/AppGoodsClassImage/0abac7e3-aff3-440a-b35e-ae483913ca29.jpg",
+                            "SeoCode": "haiwaiyoushuxing",
+                            "MobileClassName": "海外有属性",
+                            "ParentID": "fc40bddb-a95c-4928-aab5-1a1c168d2754"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": "4be52ad3-1d2a-43eb-b344-8da3a7f41411",
+            "Img": "",
+            "SeoCode": "testwo",
+            "MobileClassName": "test2",
+            "ParentID": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+            "Id": "8584b2f9-15a9-4a72-a002-71dba2bfce5a",
+            "Img": "",
+            "SeoCode": "testhree",
+            "MobileClassName": "test3",
+            "ParentID": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+            "Id": "054be33e-84c0-47b5-b05a-ae1c29754bbc",
+            "Img": "",
+            "SeoCode": "testfour",
+            "MobileClassName": "test4",
+            "ParentID": "00000000-0000-0000-0000-000000000000"
+        }
+    ],
+    "State": true,
+    "Msg": "",
+    "Code": 0
+}
