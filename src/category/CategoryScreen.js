@@ -110,13 +110,13 @@ export default class CategoryScreen extends Component {
                         return this._sectionListRenderItem(item, index, section)
                     
                     }}
-                    // renderSectionHeader={({ section: {title} }) => (
-                    //     <View
-                    //         style={{ height:30, justifyContent: 'center', alignItems:'center'}}
-                    //     >
-                    //         <Text style={{textAlign:'left',}}>{title}</Text>
-                    //     </View>
-                    // )}
+                    renderSectionHeader={({ section: {title} }) => (
+                        <View
+                            style={{ height:30, justifyContent: 'flex-start', alignItems:'center'}}
+                        >
+                            <Text style={{textAlign:'left',}}>{title}</Text>
+                        </View>
+                    )}
                />
             </View>
         );
