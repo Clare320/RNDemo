@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "fs-readfile-promise": "^3.0.1",
+    "prop-types": "^15.6.2",
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-native-vector-icons": "^5.0.0",

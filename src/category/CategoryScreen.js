@@ -102,51 +102,21 @@ export default class CategoryScreen extends Component {
                     }}
                     keyExtractor={(item, index) => String(index)}
                     sections={[
-                        {title:'Title1', data:[{source:['item', 'item']}]},
-                        {title:'Title2', data:[{source:['item', 'item']}]},
-                        {title:'Title3', data:[{source:['item', 'item']}]}
+                        {title:'Title1', data:[{source:['item1', 'item2']}]},
+                        {title:'Title2', data:[{source:['item3', 'item4']}]},
+                        {title:'Title3', data:[{source:['item5', 'item6']}]}
                     ]}
                     renderItem={({item, index, section}) => {
-                      return <View
-                            style={{
-                                flex:1,
-                                flexDirection: 'row',
-                                flexWrap: 'wrap',
-                            }}
-                            >
-                            {
-                                item.source.map((obj, i) =>{
-                                  return ( <View 
-                                    style={{
-                                        width:70,        
-                                        height:70,
-                                        alignItems:'center'               
-                                    }} 
-                                    key={String(i)}          
-                                >
-                                <Image 
-                                    style={{
-                                        marginTop: 5,
-                                        marginBottom: 5,
-                                        width: 40,
-                                        height: 40,
-                                        backgroundColor: 'cyan'
-                                    }}
-                                />
-                                    {/* {item.MobileClassName} */}
-                                    <Text style={{marginBottom:8, textAlign: 'center'}}>测试</Text>
-                                </View>   );  
-                                })
-                            }
-                             </View>
+                        return this._sectionListRenderItem(item, index, section)
+                    
                     }}
-                    renderSectionHeader={({ section: {title} }) => (
-                        <View
-                            style={{ height:30, justifyContent: 'center', alignItems:'center', backgroundColor:'red'}}
-                        >
-                            <Text style={{textAlign:'center', color: 'cyan'}}>标题头</Text>
-                        </View>
-                    )}
+                    // renderSectionHeader={({ section: {title} }) => (
+                    //     <View
+                    //         style={{ height:30, justifyContent: 'center', alignItems:'center'}}
+                    //     >
+                    //         <Text style={{textAlign:'left',}}>{title}</Text>
+                    //     </View>
+                    // )}
                />
             </View>
         );
@@ -157,42 +127,60 @@ export default class CategoryScreen extends Component {
     }
 
     _sectionListRenderItem(item, index, section) {
+        console.log(item)
         return <View
             style={{
                 flex:1,
                 flexDirection: 'row',
                 flexWrap: 'wrap',
-                height: 100,
+                justifyContent: 'flex-start',
             }}
+            key={String(index)}
         >
-           {/* item.source.map((model, i) => {
-                this._renderThirdCategoryCell(model, i)
-            }); */}
-
+           {
+               item.source.map((model, i) => {
+                   return this._renderThirdCategoryCell(model, i)
+               })
+           }
         </View>
     }
 
+    _gotoProductList() {
+        this.props.navigation.navigate('ProductList');
+    }
     _renderThirdCategoryCell(item, index) {
-        return <View 
+         
+        return  <View 
                     style={{
-                        width:70,        
-                        height:70,
-                        alignItems:'center'               
+                            // flex:1,
+                            width:70,        
+                            height:70,
+                            alignItems:'center',
+                            backgroundColor: '#f5f5f5'               
                     }} 
                     key={String(index)}          
                 >
-                <Image 
-                    style={{
-                        marginTop: 5,
-                        marginBottom: 5,
-                        width: 40,
-                        height: 40,
-                        backgroundColor: 'cyan'
-                    }}
-                />
-                    {/* {item.MobileClassName} */}
-                    <Text style={{marginBottom:8, textAlign: 'center'}}>测试</Text>
-                </View>           
+                    <TouchableOpacity
+                        activeOpacity={1}
+                        onPress={() => {
+                            this._gotoProductList()
+                        }}
+                        style={{
+                            flex:1, 
+                        }}
+                    >
+                    <Image 
+                        style={{
+                            marginTop: 5,
+                            marginBottom: 5,
+                            width: 40,
+                            height: 40,
+                            backgroundColor: 'cyan'
+                        }}
+                    />
+                    <Text style={{marginBottom:8, textAlign: 'center'}}>{item}</Text>
+                    </TouchableOpacity>   
+                </View>                
     }
 
     _changeCategory(item, index) {

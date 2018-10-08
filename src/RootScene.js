@@ -16,6 +16,7 @@ import CartScene from './cart/CartScene';
 import MineScene from './mine/MineScene';
 import TestScreen from './test/TestScreen';
 import CategoryScreen from './category/CategoryScreen';
+import ProductListScene from './productList/ProductListScene';
 
 // 可点击图片
 class TouchedImage extends Component {
@@ -185,6 +186,7 @@ const StackNavigator = createStackNavigator({
     },
     Test: TestScreen,
     Category: CategoryScreen,
+    ProductList: ProductListScene,
 },
 {
     headerLayoutPreset:'center',
