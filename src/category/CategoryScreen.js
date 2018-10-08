@@ -26,6 +26,10 @@ const kCategoryListData = [
         'key':'2',
         'name':'护理液'
     },
+    {
+        'key':'3',
+        'name':'护理液11'
+    },
 ];
 
 
