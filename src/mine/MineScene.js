@@ -15,6 +15,10 @@ export default class MineScene extends Component {
                     title={'测试动态加载标签'}
                     onPress={()=>this.handlePushCustomMarkScreen()}
                 />
+                <Button 
+                    title={'测试苹果组件'}
+                    onPress={()=>this.props.navigation.navigate('TestAppleModule')}
+                />
             </View>
         );
     }
@@ -27,7 +31,6 @@ export default class MineScene extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
         alignItems: 'center'
     }
 });
