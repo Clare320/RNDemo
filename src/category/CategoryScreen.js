@@ -63,48 +63,20 @@ export default class CategoryScreen extends Component {
         return (
             <View style={styles.container}>
                 <FlatList
-                style={{
-                    flex:1, 
-                    width: Dimensions.get('window').width*0.3,
-                }}
+                style={styles.flatList}
                 keyExtractor={(item, index) => {item.key}}
                 data={this.state.data}
                 renderItem={({item, index}) => {
-                   return <TouchableOpacity 
-                        activeOpacity={1}
-                        style={{
-                            flex:1, 
-                            justifyContent: 'center', 
-                            alignItems: 'center',
-                            height: 40, 
-                            padding:5,
-                            backgroundColor:this.state.categorySelectedIndex == index ? '#ff3366' : 'white',
-                            borderRadius: this.state.categorySelectedIndex == index ? 18 : 0,
-                        }}
-                        key={String(index)}
-                        onPress={() => {this._changeCategory(item,index)}}
-                    >
-                        <Text style={{
-                                color:'black', 
-                                textAlign:'center',
-                                }}
-                            >
-                                {item.MobileClassName}
-                        </Text>   
-                    </TouchableOpacity>
+                    return this._flatListRenderItem(item, index);
                 }}
                />
                <SectionList
-                    contentContainerStyle={{
-                        flex:4,
-                        backgroundColor:'white', 
-                        height: Dimensions.get('window').height
-                    }}
+                    contentContainerStyle={styles.sectionList}
                     keyExtractor={(item, index) => String(index)}
                     sections={[
                         {title:'Title1', data:[{source:['item1', 'item2']}]},
                         {title:'Title2', data:[{source:['item3', 'item4']}]},
-                        {title:'Title3', data:[{source:['item5', 'item6']}]}
+                        {title:'Title3', data:[{source:['item5', 'item6', 'item5', 'item6', 'item5', 'item6','item5', 'item6']}]}
                     ]}
                     renderItem={({item, index, section}) => {
                         return this._sectionListRenderItem(item, index, section)
@@ -112,7 +84,7 @@ export default class CategoryScreen extends Component {
                     }}
                     renderSectionHeader={({ section: {title} }) => (
                         <View
-                            style={{ height:30, justifyContent: 'flex-start', alignItems:'center'}}
+                            style={{ height:30, alignItems:'center'}}
                         >
                             <Text style={{textAlign:'left',}}>{title}</Text>
                         </View>
@@ -126,14 +98,42 @@ export default class CategoryScreen extends Component {
        
     }
 
+    _flatListRenderItem = (item, index) => {
+        console.log(index);
+        
+        return (
+            <View
+                style={[
+                    styles.flatListCell,
+                    {
+                        backgroundColor:this.state.categorySelectedIndex === index ? '#ff3366' : 'white',
+                        borderRadius: this.state.categorySelectedIndex === index ? 10 : 0,
+                    }
+                ]}
+                key={String(index)}
+            >
+                <TouchableOpacity
+                    activeOpacity={1}
+                    style={
+                            styles.flatListCellContainer
+                        }
+                    onPress={() => {this._changeCategory(item,index)}}
+                >
+                    <Text>{item.MobileClassName}</Text>
+                </TouchableOpacity>
+            </View>
+            );
+    }
+
     _sectionListRenderItem(item, index, section) {
         console.log(item)
         return <View
             style={{
-                flex:1,
+                // flex:1,
+                width: Dimensions.get('window').width / 5 * 4,
                 flexDirection: 'row',
                 flexWrap: 'wrap',
-                justifyContent: 'flex-start',
+                // justifyContent: 'flex-start',
             }}
             key={String(index)}
         >
@@ -184,6 +184,7 @@ export default class CategoryScreen extends Component {
     }
 
     _changeCategory(item, index) {
+        alert(index);
         this.setState({
             'categorySelectedIndex': index
         });
@@ -213,5 +214,30 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
         backgroundColor: '#f5f5f5',
         flexDirection: 'row'
+    },
+    flatList: {
+        // flex:1,
+        width: Dimensions.get('window').width * 0.3,
+    },
+    flatListCell: {
+        flex:1, 
+        justifyContent: 'center', 
+        alignItems: 'center',
+        height: 40, 
+        padding:5,
+
+    },
+    flatListCellContainer: {
+        // margin: 10,
+        // flex:1,
+        margin: 5,
+    },
+    sectionList: {
+        flex:1,
+        backgroundColor:'white', 
+        height: Dimensions.get('window').height
     }
 });
+
+/// flex属性的意义 是让弹性模型元素下所有子元素有相同的宽度，忽略他们内部内容宽度  按CSS中方式在RN来设置的话不起作用
+// RN中如果按比例来设置宽高 除了比例化设置宽高还有其它方式？
