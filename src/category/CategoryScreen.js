@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
+    Button,
     Image,
     StyleSheet,
     FlatList,
@@ -10,6 +11,9 @@ import {
     TouchableOpacity
 } from 'react-native';
 // const readFilePromise = require('fs-readfile-promise');
+
+// 调用原生
+import { NativeModules } from 'react-native';
 
 import categoryData from '../../asset/category.json';
 
@@ -36,6 +40,15 @@ const kCategoryListData = [
 export default class CategoryScreen extends Component {
     static navigationOptions = {
         title: '分类',
+        headerRight:(
+            <Button 
+                onPress={() => {
+                     const manager = NativeModules.RNCommunicationManager;
+                     manager.addEvent('测试', '参数');
+                }}
+                title='原生'
+            />
+        )
     };
 
     constructor(props) {
@@ -107,7 +120,7 @@ export default class CategoryScreen extends Component {
                     styles.flatListCell,
                     {
                         backgroundColor:this.state.categorySelectedIndex === index ? '#ff3366' : 'white',
-                        borderRadius: this.state.categorySelectedIndex === index ? 10 : 0,
+                        // borderRadius: this.state.categorySelectedIndex === index ? 10 : 0,
                     }
                 ]}
                 key={String(index)}

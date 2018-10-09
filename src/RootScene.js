@@ -6,6 +6,8 @@ import { StyleSheet,
     Dimensions 
 } from 'react-native';
 
+import { NativeModules } from 'react-native';
+
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -17,6 +19,7 @@ import MineScene from './mine/MineScene';
 import TestScreen from './test/TestScreen';
 import CategoryScreen from './category/CategoryScreen';
 import ProductListScene from './productList/ProductListScene';
+import TestCustomMarkScreen from './test/TestCustomMarkScreen';
 
 // 可点击图片
 class TouchedImage extends Component {
@@ -152,7 +155,8 @@ TabBarNavigator.navigationOptions = ({ navigation }) => {
                             source={require('../resource/home/nav_message_char.png')}
                             style={{width:20,height:30, marginRight:15}}
                             action={() => {
-                                alert('客服');
+                                const manager = NativeModules.RNCommunicationManager;
+                                manager.addEvent('pop', 'test');
                             }}
                         />);
         }
@@ -187,6 +191,7 @@ const StackNavigator = createStackNavigator({
     Test: TestScreen,
     Category: CategoryScreen,
     ProductList: ProductListScene,
+    CustomMark: TestCustomMarkScreen,
 },
 {
     headerLayoutPreset:'center',

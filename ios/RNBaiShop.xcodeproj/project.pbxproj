@@ -37,6 +37,11 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		849279F9216C4D1900CF58E7 /* RNCommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 849279F8216C4D1900CF58E7 /* RNCommunicationManager.m */; };
+		84927A21216C651900CF58E7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84927A20216C651900CF58E7 /* HomeViewController.m */; };
+		84927A24216C657E00CF58E7 /* ReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84927A23216C657E00CF58E7 /* ReactViewController.m */; };
+		84927A27216C77BC00CF58E7 /* RNEventEmitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84927A26216C77BC00CF58E7 /* RNEventEmitterManager.m */; };
+		84927A2A216C987F00CF58E7 /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84927A29216C987F00CF58E7 /* RNTMapManager.m */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -342,6 +347,16 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		849279F7216C4D1900CF58E7 /* RNCommunicationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNCommunicationManager.h; sourceTree = "<group>"; };
+		849279F8216C4D1900CF58E7 /* RNCommunicationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCommunicationManager.m; sourceTree = "<group>"; };
+		84927A1F216C651900CF58E7 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		84927A20216C651900CF58E7 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		84927A22216C657E00CF58E7 /* ReactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactViewController.h; sourceTree = "<group>"; };
+		84927A23216C657E00CF58E7 /* ReactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactViewController.m; sourceTree = "<group>"; };
+		84927A25216C77BC00CF58E7 /* RNEventEmitterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNEventEmitterManager.h; sourceTree = "<group>"; };
+		84927A26216C77BC00CF58E7 /* RNEventEmitterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNEventEmitterManager.m; sourceTree = "<group>"; };
+		84927A28216C987F00CF58E7 /* RNTMapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTMapManager.h; sourceTree = "<group>"; };
+		84927A29216C987F00CF58E7 /* RNTMapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTMapManager.m; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -485,6 +500,16 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				84927A1F216C651900CF58E7 /* HomeViewController.h */,
+				84927A20216C651900CF58E7 /* HomeViewController.m */,
+				84927A22216C657E00CF58E7 /* ReactViewController.h */,
+				84927A23216C657E00CF58E7 /* ReactViewController.m */,
+				849279F7216C4D1900CF58E7 /* RNCommunicationManager.h */,
+				849279F8216C4D1900CF58E7 /* RNCommunicationManager.m */,
+				84927A25216C77BC00CF58E7 /* RNEventEmitterManager.h */,
+				84927A26216C77BC00CF58E7 /* RNEventEmitterManager.m */,
+				84927A28216C987F00CF58E7 /* RNTMapManager.h */,
+				84927A29216C987F00CF58E7 /* RNTMapManager.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -1118,8 +1143,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849279F9216C4D1900CF58E7 /* RNCommunicationManager.m in Sources */,
+				84927A27216C77BC00CF58E7 /* RNEventEmitterManager.m in Sources */,
+				84927A24216C657E00CF58E7 /* ReactViewController.m in Sources */,
+				84927A2A216C987F00CF58E7 /* RNTMapManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				84927A21216C651900CF58E7 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

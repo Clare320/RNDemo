@@ -11,8 +11,16 @@ export default class MineScene extends Component {
             <View style={ styles.container }>
                 <Text>Mine Scene</Text>
                 <Button title={'PushTest'} onPress={(e) => this.props.navigation.navigate('Test')}>Push Test</Button>
+                <Button 
+                    title={'测试动态加载标签'}
+                    onPress={()=>this.handlePushCustomMarkScreen()}
+                />
             </View>
         );
+    }
+
+    handlePushCustomMarkScreen = () => {
+        this.props.navigation.navigate('CustomMark');
     }
 }
 
