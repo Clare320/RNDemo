@@ -4,7 +4,8 @@ import {
     StyleSheet,
 } from 'react-native';
 
-import MapView from './MapView.js';
+import MapView from './MapView';
+import RNCustomView from './RNCustomView';
 
 export default class TestAppleModuleScreen extends Component {
     
@@ -13,9 +14,21 @@ export default class TestAppleModuleScreen extends Component {
     }
     
     render() {
+
+        let region = {
+            latitude: 121.43,
+            longitude: 31.23,
+            latitudeDelta:0.1,
+            longitudeDelta:0.1,
+        };
+
         return (
             <View style={styles.container}>
-                <MapView style={{flex:1, backgroundColor: 'cyan', width: 100, height:100}} />
+                <MapView 
+                    style={{width:300, height:300}} 
+                    region={region}
+                />
+                {/* <RNCustomView style={{height: 100, width: 100, backgroundColor:'red'}} /> */}
             </View>
         );
     }
