@@ -28,7 +28,7 @@
                                                       moduleName:@"RNBaiShop"
                                                initialProperties:nil
                                                    launchOptions:@{
-                                                                   @"oc":@"123456"
+                                                                   @"type":@"test"
                                                                    }];
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
   self.view = rootView;

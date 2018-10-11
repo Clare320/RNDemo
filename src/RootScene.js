@@ -9,7 +9,6 @@ import { StyleSheet,
 import { NativeModules } from 'react-native';
 
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import HomeScene from './home/HomeScene';
 import DiscoveryScene from './discovery/DiscoveryScene';
@@ -209,7 +208,23 @@ const StackNavigator = createStackNavigator({
     }
 });
 
+export default class NavigationController extends Component {
+    
+    constructor(props) {
+        super(props);
 
+        console.log(this.props);
+        
+    }
+    
+    render() {
+        return (
+           <StackNavigator 
+            // initialRouteName={this.props.type === 'tab' ? 'Tab' : 'Test'}
+           />
+        );
+    }
+}
 
 const styles = StyleSheet.create({
     tabBarItem: {
@@ -231,5 +246,3 @@ const styles = StyleSheet.create({
         marginLeft:20
     }
 });
-
-export default StackNavigator;

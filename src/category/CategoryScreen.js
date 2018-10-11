@@ -8,7 +8,7 @@ import {
     FlatList,
     SectionList,
     Dimensions,
-    TouchableOpacity
+    TouchableOpacity,
 } from 'react-native';
 // const readFilePromise = require('fs-readfile-promise');
 

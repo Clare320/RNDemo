@@ -21,6 +21,7 @@ export default class TestTransformScreen extends Component {
 
     render() {
         // 这里需要注意 除了rotate，skew之外其余transform全是数字
+        // rn中的transform操作不保留状态的，每次操作都是基于最初状态
         let buttons = [
             {
                 title:'reset',
