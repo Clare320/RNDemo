@@ -43,6 +43,7 @@ export default class TestScreen extends Component {
                     isLoop={true}
                     autoPlay={true}
                 /> */}
+                
                 <Button 
                     title={'3s后弹出alert'}
                     onPress={()=>this.delayPresentAlert()}
@@ -67,6 +68,7 @@ export default class TestScreen extends Component {
 
                     }}
                 />
+               
             </View>
         );
     }

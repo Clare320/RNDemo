@@ -7,20 +7,44 @@ export default class MineScene extends Component {
     }
 
     render() {
+        let buttons = [
+            {
+                'title':'PushTest',
+                action: () => this.props.navigation.navigate('Test')
+            },
+            {
+                'title':'动态加载标签',
+                action: this.handlePushCustomMarkScreen
+            },
+            {
+                'title':'苹果组件',
+                action: () => {
+                    this.props.navigation.navigate('TestAppleModule')
+                }
+            },
+            {
+                'title':'Transform',
+                action: this.handleTestTransform
+            },
+        ];
         return (
             <View style={ styles.container }>
                 <Text>Mine Scene</Text>
-                <Button title={'PushTest'} onPress={(e) => this.props.navigation.navigate('Test')}>Push Test</Button>
-                <Button 
-                    title={'测试动态加载标签'}
-                    onPress={()=>this.handlePushCustomMarkScreen()}
-                />
-                <Button 
-                    title={'测试苹果组件'}
-                    onPress={()=>this.props.navigation.navigate('TestAppleModule')}
-                />
+                {
+                   buttons.map( (item, index) => {
+                       return <Button 
+                            key={String(index)}
+                            title={item.title}
+                            onPress={() => item.action()}
+                       />
+                   })
+                }
             </View>
         );
+    }
+
+    handleTestTransform = () => {
+        this.props.navigation.navigate('Transform');
     }
 
     handlePushCustomMarkScreen = () => {

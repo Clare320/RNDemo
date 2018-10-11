@@ -21,7 +21,7 @@ import CategoryScreen from './category/CategoryScreen';
 import ProductListScene from './productList/ProductListScene';
 import TestCustomMarkScreen from './test/TestCustomMarkScreen';
 import TestAppleModuleScreen from './test/TestAppleModuleScreen';
-
+import TestTransformScreen from './test/TestTransformScreen';
 // 可点击图片
 class TouchedImage extends Component {
     render() {
@@ -194,6 +194,7 @@ const StackNavigator = createStackNavigator({
     ProductList: ProductListScene,
     CustomMark: TestCustomMarkScreen,
     TestAppleModule: TestAppleModuleScreen,
+    Transform: TestTransformScreen,
 },
 {
     headerLayoutPreset:'center',
