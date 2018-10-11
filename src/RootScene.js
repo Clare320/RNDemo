@@ -8,7 +8,7 @@ import { StyleSheet,
 
 import { NativeModules } from 'react-native';
 
-import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
+import { createBottomTabNavigator, createStackNavigator, createSwitchNavigator } from 'react-navigation';
 
 import HomeScene from './home/HomeScene';
 import DiscoveryScene from './discovery/DiscoveryScene';
@@ -184,43 +184,78 @@ TabBarNavigator.navigationOptions = ({ navigation }) => {
 };
 
 // 导航
-const StackNavigator = createStackNavigator({
-    Tab: {
-        screen: TabBarNavigator,
-    },
-    Test: TestScreen,
-    Category: CategoryScreen,
-    ProductList: ProductListScene,
-    CustomMark: TestCustomMarkScreen,
-    TestAppleModule: TestAppleModuleScreen,
-    Transform: TestTransformScreen,
-},
-{
-    headerLayoutPreset:'center',
-    navigationOptions: {
-        headerBackTitle: null,
-        headerBackImage:(
-            <Image 
-                source={require('../resource/nav/nav_back_gray.png')}
-                style={{width:44, height:44, marginLeft:15}}
-            ></Image>
-        )
-    }
-});
+// const StackNavigator = createStackNavigator({
+//     Tab: {
+//         screen: TabBarNavigator,
+//     },
+//     Test: TestScreen,
+//     Category: CategoryScreen,
+//     ProductList: ProductListScene,
+//     CustomMark: TestCustomMarkScreen,
+//     TestAppleModule: TestAppleModuleScreen,
+//     Transform: TestTransformScreen,
+// },
+// {
+//     headerLayoutPreset:'center',
+//     navigationOptions: {
+//         headerBackTitle: null,
+//         headerBackImage:(
+//             <Image 
+//                 source={require('../resource/nav/nav_back_gray.png')}
+//                 style={{width:44, height:44, marginLeft:15}}
+//             ></Image>
+//         )
+//     },
+//     initialRouteName:'Test',
+// });
+
 
 export default class NavigationController extends Component {
     
     constructor(props) {
         super(props);
-
-        console.log(this.props);
         
+        // this.state = {
+        //     rotuerName:props.type === 'tab' ? 'Tab' : 'Test'
+        // };
     }
     
     render() {
+        console.log('llj');
+        console.log(this.props.type);
+    
+       this.testName = this.props.type === 'tab' ? 'Tab' : 'Test';
+        // let testName = 'Test';
+        // console.log('before-----init'+testName);
+        
+        const Navigator =  createStackNavigator({
+            Tab: {
+                screen: TabBarNavigator,
+            },
+            Test: TestScreen,
+            Category: CategoryScreen,
+            ProductList: ProductListScene,
+            CustomMark: TestCustomMarkScreen,
+            TestAppleModule: TestAppleModuleScreen,
+            Transform: TestTransformScreen,
+        },
+        {
+            headerLayoutPreset:'center',
+            navigationOptions: {
+                headerBackTitle: null,
+                headerBackImage:(
+                    <Image 
+                        source={require('../resource/nav/nav_back_gray.png')}
+                        style={{width:44, height:44, marginLeft:15}}
+                    ></Image>
+                )
+            },
+            initialRouteName: this.testName,
+            initialRouteParams: this.props,
+        });
+
         return (
-           <StackNavigator 
-            // initialRouteName={this.props.type === 'tab' ? 'Tab' : 'Test'}
+           <Navigator 
            />
         );
     }

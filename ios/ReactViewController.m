@@ -26,7 +26,10 @@
   
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"RNBaiShop"
-                                               initialProperties:nil
+                                               initialProperties:@{
+                                                                   @"type":@"tab",
+                                                                   @"value":@"llj",
+                                                                   }
                                                    launchOptions:@{
                                                                    @"type":@"test"
                                                                    }];
