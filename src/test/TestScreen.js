@@ -68,7 +68,9 @@ export default class TestScreen extends Component {
 
                     }}
                 />
-               
+               {
+                   this.addTestView()
+               }
             </View>
         );
     }
@@ -94,6 +96,13 @@ export default class TestScreen extends Component {
         this.timer3 = setTimeout(() => {
             alert('这是3s后的alert');
         }, 3*1000);
+    }
+
+    addTestView = () => {
+        // let TestImportDynamiclly = require('./TestImportDynamiclly.js');
+        // return (
+        //     <TestImportDynamiclly style={{width:100, height:100}}/>
+        // );
     }
 }
 
