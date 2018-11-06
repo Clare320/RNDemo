@@ -26,13 +26,23 @@ export default class MineScene extends Component {
                 'title':'Transform',
                 action: this.handleTestTransform
             },
+            {
+                'title': 'Test Banner',
+                action: this.showBanner
+            },
+            {
+                title: 'Banner1',
+                action: () => {
+                    this.props.navigation.navigate('Banner1');
+                }
+            }
         ];
         return (
             <View style={ styles.container }>
                 <Text>Mine Scene</Text>
                 {
                    buttons.map( (item, index) => {
-                       return <Button 
+                       return <Button
                             key={String(index)}
                             title={item.title}
                             onPress={() => item.action()}
@@ -49,6 +59,10 @@ export default class MineScene extends Component {
 
     handlePushCustomMarkScreen = () => {
         this.props.navigation.navigate('CustomMark');
+    }
+
+    showBanner = () => {
+        this.props.navigation.navigate('Banner');
     }
 }
 

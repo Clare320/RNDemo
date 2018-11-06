@@ -11,8 +11,10 @@
     "prop-types": "^15.6.2",
     "react": "16.5.0",
     "react-native": "0.57.0",
+    "react-native-carousel-pager": "^1.5.0",
     "react-native-device-info": "^0.24.0",
-    "react-native-vector-icons": "^5.0.0",
+    "react-native-looped-carousel": "^0.1.13",
+    "react-native-snap-carousel": "^3.7.5",
     "react-native-viewpager": "^0.2.13",
     "react-navigation": "^2.17.0"
   },
@@ -23,6 +25,9 @@
     "react-test-renderer": "16.4.1"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
   }
 }

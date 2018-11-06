@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, 
+import { StyleSheet,
     Image,
     TouchableOpacity,
     Text,
-    Dimensions 
+    Dimensions
 } from 'react-native';
 
 import { NativeModules } from 'react-native';
@@ -21,6 +21,12 @@ import ProductListScene from './productList/ProductListScene';
 import TestCustomMarkScreen from './test/TestCustomMarkScreen';
 import TestAppleModuleScreen from './test/TestAppleModuleScreen';
 import TestTransformScreen from './test/TestTransformScreen';
+import Banner1Screen from './test/Banner1';
+
+import BannerScreen from './example/src';
+
+
+
 // 可点击图片
 class TouchedImage extends Component {
     render() {
@@ -29,7 +35,7 @@ class TouchedImage extends Component {
                 onPress={this.props.action}
                 activeOpacity={1}
             >
-                <Image 
+                <Image
                     source={this.props.source}
                     style={this.props.style}
                 />
@@ -45,9 +51,9 @@ const TabBarNavigator = createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '首页',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image  
-                        source={focused ? require('../resource/tab/tab_home_selected.png') : require('../resource/tab/tab_home_default.png')} 
-                        style={styles.tabBarItem} 
+                    <Image
+                        source={focused ? require('../resource/tab/tab_home_selected.png') : require('../resource/tab/tab_home_default.png')}
+                        style={styles.tabBarItem}
                     />
                 )
             }
@@ -57,9 +63,9 @@ const TabBarNavigator = createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '发现',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image  
-                        source={focused ? require('../resource/tab/tab_discovery_selected.png') : require('../resource/tab/tab_discovery_default.png')} 
-                        style={styles.tabBarItem} 
+                    <Image
+                        source={focused ? require('../resource/tab/tab_discovery_selected.png') : require('../resource/tab/tab_discovery_default.png')}
+                        style={styles.tabBarItem}
                     />
                 )
             }
@@ -69,9 +75,9 @@ const TabBarNavigator = createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '健康',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image  
-                        source={focused ? require('../resource/tab/tab_health_selected.png') : require('../resource/tab/tab_health_default.png')} 
-                        style={styles.tabBarItem} 
+                    <Image
+                        source={focused ? require('../resource/tab/tab_health_selected.png') : require('../resource/tab/tab_health_default.png')}
+                        style={styles.tabBarItem}
                     />
                 )
             }
@@ -81,9 +87,9 @@ const TabBarNavigator = createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '购物车',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image  
-                        source={focused ? require('../resource/tab/tab_cart_selected.png') : require('../resource/tab/tab_cart_default.png')} 
-                        style={styles.tabBarItem} 
+                    <Image
+                        source={focused ? require('../resource/tab/tab_cart_selected.png') : require('../resource/tab/tab_cart_default.png')}
+                        style={styles.tabBarItem}
                     />
                 )
             }
@@ -93,14 +99,14 @@ const TabBarNavigator = createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '我的',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image  
-                        source={focused ? require('../resource/tab/tab_mine_selected.png') : require('../resource/tab/tab_mine_default.png')} 
-                        style={styles.tabBarItem} 
+                    <Image
+                        source={focused ? require('../resource/tab/tab_mine_selected.png') : require('../resource/tab/tab_mine_default.png')}
+                        style={styles.tabBarItem}
                     />
                 )
             }
         }
-    }, 
+    },
     {
         // navigationOptions: ({ navigation }) => ({
         //     tabBarIcon: ({ focused, tintColor }) => {
@@ -130,21 +136,21 @@ TabBarNavigator.navigationOptions = ({ navigation }) => {
         case 'Home':
         {
             headerTitle = (
-                <TouchableOpacity 
+                <TouchableOpacity
                     activeOpacity={1}
                     style={styles.searchBar}
                     onPress={() => {
                         alert('Search');
                     }}
                 >
-                    <Image 
+                    <Image
                         source={require('../resource/home/nav_search.png')}
                         style={styles.searchIcon}
                     />
                     <Text style={{color:'#c0c0c0'}}>请输入搜索内容</Text>
                 </TouchableOpacity>
             );
-            leftItem = (<TouchedImage 
+            leftItem = (<TouchedImage
                             source={require('../resource/home/nav_classify_char.png')}
                             style={{width:20, height:33.5, marginLeft:15}}
                             action={() => {
@@ -200,7 +206,7 @@ TabBarNavigator.navigationOptions = ({ navigation }) => {
 //     navigationOptions: {
 //         headerBackTitle: null,
 //         headerBackImage:(
-//             <Image 
+//             <Image
 //                 source={require('../resource/nav/nav_back_gray.png')}
 //                 style={{width:44, height:44, marginLeft:15}}
 //             ></Image>
@@ -211,23 +217,23 @@ TabBarNavigator.navigationOptions = ({ navigation }) => {
 
 
 export default class NavigationController extends Component {
-    
+
     constructor(props) {
         super(props);
-        
+
         // this.state = {
         //     rotuerName:props.type === 'tab' ? 'Tab' : 'Test'
         // };
     }
-    
+
     render() {
         console.log('llj');
         console.log(this.props.type);
-    
+
        this.testName = this.props.type === 'tab' ? 'Tab' : 'Test';
         // let testName = 'Test';
         // console.log('before-----init'+testName);
-        
+
         const Navigator =  createStackNavigator({
             Tab: {
                 screen: TabBarNavigator,
@@ -238,13 +244,15 @@ export default class NavigationController extends Component {
             CustomMark: TestCustomMarkScreen,
             TestAppleModule: TestAppleModuleScreen,
             Transform: TestTransformScreen,
+            Banner: BannerScreen,
+            Banner1: Banner1Screen,
         },
         {
             headerLayoutPreset:'center',
             navigationOptions: {
                 headerBackTitle: null,
                 headerBackImage:(
-                    <Image 
+                    <Image
                         source={require('../resource/nav/nav_back_gray.png')}
                         style={{width:44, height:44, marginLeft:15}}
                     ></Image>
@@ -255,7 +263,7 @@ export default class NavigationController extends Component {
         });
 
         return (
-           <Navigator 
+           <Navigator
            />
         );
     }
