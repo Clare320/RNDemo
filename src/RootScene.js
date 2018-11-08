@@ -22,7 +22,7 @@ import TestCustomMarkScreen from './test/TestCustomMarkScreen';
 import TestAppleModuleScreen from './test/TestAppleModuleScreen';
 import TestTransformScreen from './test/TestTransformScreen';
 import Banner1Screen from './test/Banner1';
-
+import TestBanner2 from './test/TestBanner2';
 import BannerScreen from './example/src';
 
 
@@ -246,6 +246,7 @@ export default class NavigationController extends Component {
             Transform: TestTransformScreen,
             Banner: BannerScreen,
             Banner1: Banner1Screen,
+            TestBanner2: TestBanner2,
         },
         {
             headerLayoutPreset:'center',

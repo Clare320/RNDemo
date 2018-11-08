@@ -35,7 +35,13 @@ export default class MineScene extends Component {
                 action: () => {
                     this.props.navigation.navigate('Banner1');
                 }
-            }
+            },
+            {
+                title: 'TestBanner2',
+                action: () => {
+                    this.props.navigation.navigate('TestBanner2');
+                }
+            },
         ];
         return (
             <View style={ styles.container }>
